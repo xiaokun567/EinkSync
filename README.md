@@ -15,14 +15,14 @@ docker run -d -p 5000:5000 \
   -v $(pwd)/data:/app/data \
   -v $(pwd)/downloads:/app/downloads \
   -v $(pwd)/library:/app/library \
-  xiaokun566/einkcom:latest
+  xiaokun566/einksync:latest
 
 例如： 我修改了本地访问端口，这样配置信息和书库书籍不会丢失
 docker run -d -p 5008:5000 \
   -v /home/einkcom/data:/app/data \
   -v /home/einkcom/downloads:/app/downloads \
   -v /home/einkcom/library:/app/library \
-  xiaokun566/einkcom:latest
+  xiaokun566/einksync:latest
 ```
 
 
