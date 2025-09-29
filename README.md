@@ -148,21 +148,33 @@ DUOXIANCHENGCHAXUN=10
 1.在番茄官网登录后，打开书架-键盘输入F12→选择Network(网络)，刷新书架页面请求，复制请求头里的 Cookie 到下方：
 ![alt text](image.png)
 ### 七猫小说
-1.登录 七猫小说网站
-2.访问书架页面
-3.按F12打开开发者工具
-4.切换到Network面板
-5.找到请求，复制Authorization头中的token
+1.登录 七猫小说网站  
+2.访问书架页面  
+3.按F12打开开发者工具  
+4.切换到Network面板  
+5.找到请求，复制Authorization头中的token  
 ![alt text](image-1.png)
 ### 微信读书 （配置页在书库-管理）
 微信读书比较复杂、手机微信读书App抓包的 login 请求体。打开抓包软件打开微信读书App-在书架页面等待10-30分钟(大概20分钟左右发送一次登陆请求包)-等待微信读书发送登陆请求-搜索login请求-复制请求体-粘贴在上方即可
+### 亚马逊cookie 获取
+获取Amazon cookies步骤： 
+打开浏览器，访问 [Amazon Send-to-Kindle](https://www.amazon.com/gp/sendtokindle)  
+登录你的Amazon账户  
+按F12打开开发者工具，切换到Network标签  
+刷新页面，找到第一个请求sendtokindle  
+在请求头中找到"Cookie"字段，复制完整的cookie字符串  
+直接粘贴到上方文本框（支持标准HTTP Cookie格式）  
+支持的格式：  
+• 标准HTTP Cookie格式：session-id=xxx; ubid-main=xxx; ...  
+• JSON格式：[{"name":"session-id","value":"xxx"},...]  
+<img width="1360" height="611" alt="image" src="https://github.com/user-attachments/assets/5f2f5929-33e1-4f48-a4bc-5ca937c9ab1a" />
 
-##汉王墨水屏高级配置
- 功能说明
-汉王墨水屏不需要和服务器在同一个局域网也能使用方法。只要网页打开设备和汉王墨水屏在同一个局域网即可实现。
-⚠️ 重要注意事项：
-网络要求：网页和设备必须在同一局域网内
-协议匹配：如果网页使用HTTPS，设备地址也必须使用HTTPS
-设备配置：需要修改汉王墨水屏接口配置以支持网页直连
-安全考虑：请确保设备网络安全，避免未授权访问
- 如需使用请开启进阶功能，请详细阅读注意事项！
+##汉王墨水屏高级配置  
+ 功能说明  
+汉王墨水屏不需要和服务器在同一个局域网也能使用方法。只要网页打开设备和汉王墨水屏在同一个局域网即可实现。  
+⚠️ 重要注意事项：  
+网络要求：网页和设备必须在同一局域网内  
+协议匹配：如果网页使用HTTPS，设备地址也必须使用HTTPS  
+设备配置：需要修改汉王墨水屏接口配置以支持网页直连  
+安全考虑：请确保设备网络安全，避免未授权访问  
+ 如需使用请开启进阶功能，请详细阅读注意事项！  
