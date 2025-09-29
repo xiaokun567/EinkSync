@@ -108,21 +108,6 @@ DUOXIANCHENGCHAXUN=10
 > 4. **统一管理界面**：所有配置功能集中在书库页面的"管理"按钮中
 > 5. **实时状态监控**：网页界面实时显示各项配置的有效性和状态
 
-####  微信读书环境变量详解
-
-| 环境变量 | 说明 | 默认值 | 是否必填 |
-|---------|------|--------|----------|
-| `WEREAD_LOGIN_URL` | 微信读书登录API地址 | `https://i.weread.qq.com/login` | 否 |
-| `WEREAD_VID` | 用户视频ID | `320472056` | 是 |
-| `WEREAD_DEVICE_ID` | 设备唯一标识 | `d0ccbeca8a258d988e38f621871c731b` | 是 |
-| `WEREAD_DEVICE_NAME` | 设备名称 | `甚番` | 否 |
-| `WEREAD_SIGNATURE` | 请求签名 | 见配置文件 | 是 |
-| `WEREAD_REFRESH_TOKEN` | 刷新令牌 | 见配置文件 | 是 |
-| `WEREAD_DEVICE_TOKEN` | 设备令牌 | 见配置文件 | 是 |
-| `WEREAD_USER_AGENT` | 用户代理字符串 | `WeRead/9.3.4 (iPhone; iOS 26.0; Scale/3.00)` | 否 |
-| `WEREAD_VERSION` | 应用版本号 | `9.3.4.44` | 否 |
-| `WEREAD_REFRESH_INTERVAL_MINUTES` | 登录参数刷新间隔（分钟） | `60` | 否 |
-| `WEREAD_CHECK_INTERVAL_MINUTES` | 定时任务检查间隔（分钟） | `1` | 否 |
 ```
 ## Cookie 获取
 ### 番茄小说
@@ -150,7 +135,7 @@ DUOXIANCHENGCHAXUN=10
 • JSON格式：[{"name":"session-id","value":"xxx"},...]  
 <img width="1360" height="611" alt="image" src="https://github.com/user-attachments/assets/5f2f5929-33e1-4f48-a4bc-5ca937c9ab1a" />
 
-##汉王墨水屏高级配置  
+## 汉王墨水屏高级配置  
  功能说明  
 汉王墨水屏不需要和服务器在同一个局域网也能使用方法。只要网页打开设备和汉王墨水屏在同一个局域网即可实现。  
 ⚠️ 重要注意事项：  
